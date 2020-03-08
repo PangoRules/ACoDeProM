@@ -13,41 +13,41 @@
 
   </head>
   <body>
-    <header class="container-fluid ">
-      <div class="container">
-        <div class="row justify-content-center">
-          <img id="logoP" src="{{ asset('img/logos/logo1.png') }}" alt="">
-          <div class="col-6 pl-3 pr-3 pt-4 text-center">
-            <span class="lead display-4 pr-3 pt-4">Corporativo</span>
-            <h1 class="display-4"><b>ACoDeProM</b></h1>
-            <p class="display-4 ">Asesores, Consultores y Desarrolladores de Proyectos Productivos</p>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-3">
-            <a href="{{ url('') }}"><p>INICIO</p></a>
-          </div>
-          <div class="col-3">
-            <a href="{{ url('nuestra-empresa') }}"><p>NUESTRA EMPRESA</p></a>
-          </div>
-          <div class="col-3">
-            <div class="dropdown">
-              <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SERVICIOS
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="{{ url('proyectos') }}">Proyectos</a>
-                <a class="dropdown-item" href="{{ url('asesorias') }}">Asesorias</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <a href="{{ url('contacto') }}"><p>CONTACTO</p></a>
-          </div>
-        </div>
-      </div>  
+    <header class="jumbotron">
+      <h1>ACoDeProM</h1>
+      <p>Consultores y Desarrolladores de Proyectos Productivos</p>
     </header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapse_target">
+        <span class="navbar-text">ACoDeProM</span>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('') }}">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('nuestra-empresa') }}">Nuestra Empresa</a>
+          </li>
 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Servicios <span class="caret"></span></a>
+            <div class="dropdown-menu" aria-labelledby="dropdown_target">
+              <a class="dropdown-item" href="#">Asesorias</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Proyectos</a>
+            </div>
+            </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('contacto') }}">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    
 	@yield('contenido')
 
     <!-- Optional JavaScript -->
