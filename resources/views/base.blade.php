@@ -16,7 +16,7 @@
     <header class="jumbotron" style="margin:auto; border-radius: 0px;">
       <div class="row">
         <div class="container col-4">
-          <img src="{{ asset('img/logos/logo1.png') }}" alt="">
+          <a href="{{ url('') }}"><img src="{{ asset('img/logos/logo1.png') }}" alt=""></a>
         </div>
         <div class="container col-8 pt-3" style="color: #6A9DD1">
           <h1>ACoDeProM</h1>
@@ -30,7 +30,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapse_target">
-        <span class="navbar-text">ACoDeProM</span>
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="{{ url('') }}">Inicio</a>
