@@ -13,11 +13,19 @@
 
   </head>
   <body>
-    <header class="jumbotron">
-      <h1>ACoDeProM</h1>
-      <p>Consultores y Desarrolladores de Proyectos Productivos</p>
+    <header class="jumbotron" style="margin:auto; border-radius: 0px;">
+      <div class="row">
+        <div class="container col-4">
+          <img src="{{ asset('img/logos/logo1.png') }}" alt="">
+        </div>
+        <div class="container col-8 pt-3" style="color: #6A9DD1">
+          <h1>ACoDeProM</h1>
+          <p>Consultores y Desarrolladores de Proyectos Productivos</p>
+        </div>
+      </div>
+      
     </header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #6A9DD1">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
