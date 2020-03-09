@@ -26,9 +26,9 @@ Route::get('contacto/', function () {
 });
 
 Route::get('asesorias/', function () {
-    return view('inicio');
+    return view('asesorias');
 });
 
 Route::get('proyectos/', function () {
-    return view('inicio');
+    return view('proyectos');
 });
