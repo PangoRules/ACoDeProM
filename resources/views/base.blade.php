@@ -30,7 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapse_target">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-center">
           <li class="nav-item">
             <a class="nav-link" href="{{ url('') }}">Inicio</a>
           </li>
@@ -39,7 +39,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target">Servicios <span class="caret"></span></a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" style="cursor: pointer;">Servicios <span class="caret"></span></a>
             <div class="dropdown-menu" aria-labelledby="dropdown_target">
               <a class="dropdown-item" href="#">Asesorias</a>
               <div class="dropdown-divider"></div>

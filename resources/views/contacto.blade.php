@@ -6,9 +6,9 @@
 
 @section('contenido')
 	<div class="container mt-5">
-		<h2 class="display-1 text-center" style="margin-top:40px!important;">CONTACTO</h2>
+		<h2 class="display-4 text-center" style="margin-top:40px!important;">CONTACTO</h2>
 		<div class="container text-center mt-5" style="margin-top:80px!important;">
-			<h4 class="display-4">Teléfono para Ventas</h4>
+			<h4 class="display-5">Teléfono para Ventas</h4>
 			<p class="lead"><b>961-294-2885</b></p>
 		</div>
 		<div class="container text-center mt-5" style="margin-top:80px!important;">
