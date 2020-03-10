@@ -19,8 +19,8 @@
           <a href="{{ url('') }}"><img src="{{ asset('img/logos/logo1.png') }}" alt=""></a>
         </div>
         <div class="container col-8 pt-3" style="color: #6A9DD1">
-          <h1>ACoDeProM</h1>
-          <p>Consultores y Desarrolladores de Proyectos Productivos</p>
+          <h1 style="font-size: 4rem;">ACoDeProM</h1>
+          <p style="font-size: 1.5rem!important;">Consultores y Desarrolladores de Proyectos Productivos</p>
         </div>
       </div>
       
