@@ -17,6 +17,11 @@
         </ul>
     </div>
 @endif
+@if(session('success'))
+	<div class="container alert alert-success align-items-center mt-4" role="alert">
+	  <span>{{session('success')}}</span>
+	</div>
+@endif
 	<h2 class="display-4 text-center" style="margin-top:40px!important;">PROYECTOS</h2>
 	<div class="container mt-4 p-4">
 		<table class="table table-hover">

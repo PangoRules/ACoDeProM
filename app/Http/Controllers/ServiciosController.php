@@ -25,5 +25,10 @@ class ServiciosController extends Controller
 
     	Mail::to('contacto@personasproductivas.com')
     	->send(new MensajeCotizacion($datos));
+        if(count(Mail::failures()) > 0){
+            return redirect()->back()->withError('msgError', ['Hubieron errores por favor intentelo más tarde']);   
+        }else{
+            return redirect()->back()->withSuccess('Mensaje enviado, espere la contestación.');
+        }
     }
 }
