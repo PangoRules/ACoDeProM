@@ -25,7 +25,7 @@
       </div>
       
     </header>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #6A9DD1">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #6A9DD1; z-index: 1;">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,18 +37,16 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url('nuestra-empresa') }}">Nuestra Empresa</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" style="cursor: pointer;">Servicios <span class="caret"></span></a>
-            <div class="dropdown-menu" aria-labelledby="dropdown_target">
-              <a class="dropdown-item" href="{{ url('asesorias') }}">Asesorias</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{{ url('proyectos') }}">Proyectos</a>
-            </div>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('servicios') }}">Servicios</a>
+          </li>
           
           <li class="nav-item">
             <a class="nav-link" href="{{ url('contacto') }}">Contacto</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('pago') }}">Pago</a>
           </li>
 
         </ul>

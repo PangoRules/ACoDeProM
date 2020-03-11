@@ -25,10 +25,12 @@ Route::get('contacto/', function () {
     return view('contacto');
 });
 
-Route::get('asesorias/', function () {
-    return view('asesorias');
+Route::get('servicios/', function () {
+    return view('servicios');
 });
 
-Route::get('proyectos/', function () {
-    return view('proyectos');
+Route::get('pago/', function () {
+    return view('pago');
 });
+
+Route::post('solicitarcotizacion/','ServiciosController@SendMail')->name('MailSender');
