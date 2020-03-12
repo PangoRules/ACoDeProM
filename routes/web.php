@@ -34,3 +34,6 @@ Route::get('pago/', function () {
 });
 
 Route::post('solicitarcotizacion/','ServiciosController@SendMail')->name('MailSender');
+
+Route::post('pay/','Pay@Pagando')->name('pay');
+Route::get('pay/','Pay@index')->name('pays');

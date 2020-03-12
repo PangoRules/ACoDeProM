@@ -8,6 +8,7 @@
  */
 
 define('LARAVEL_START', microtime(true));
+require __DIR__.'/../app/conektaphpmaster/lib/Conekta.php';
 
 /*
 |--------------------------------------------------------------------------
