@@ -45,8 +45,23 @@
 						<input class="form-control" type="text" placeholder="Nombre del proyecto o asesoria" name="ProyAse" id="ProyAse">
 					</div>
 					<div class="col-md-4">
-						<label for="number">Monto</label>
-						<input id="monto" name="monto" class="form-control" type="number" placeholder="123">
+						<div class="row">
+						<div class="col-5">
+							<label for="number">Monto</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<select class="custom-select" id="tipoMoneda" name="tipoMoneda">
+									    <option selected>MXN</option>
+									    <option value="MXN">MXN</option>
+									    <option value="USD">USD</option>
+									  </select>
+								</div>
+							</div>
+						</div>
+						<div class="col-7" style="margin-top: 2rem;">
+							<input id="monto" name="monto" class="form-control" type="number" placeholder="123">
+						</div>
+					</div>
 					</div>
 				</div>
 				<div class="row text-center mt-5">
@@ -59,6 +74,21 @@
 		<input type="hidden" id="conektaTokenId" name="conektaTokenId">
 	</form>
 
+	@if ($errors->any())
+		<div class="container alert alert-danger align-items-center mt-4">
+		    <ul>
+		        @foreach ($errors->all() as $error)
+		            <li>{{ $error }}</li>
+		        @endforeach
+		    </ul>
+		</div>
+	@endif
+	@if(session('success'))
+		<div class="container alert alert-success align-items-center mt-4" role="alert">
+		  <span>{{session('success')}}</span>
+		</div>
+	@endif
+
 	<script type="text/javascript">
 		Conekta.setPublicKey("key_JygnrdgsVrv1unxWrZGFpxw");
 
@@ -66,7 +96,7 @@
 			var $form=("#card-form");
 			$("#conektaTokenId").val(token.id);
 			jsPay(); 
-			alert(token.id);
+			//alert(token.id);
 			/*$("#card-form").submit(function(e){ //esto se me ocurrio
 				$(this).unbind('submit').submit();
 			});*/

@@ -32,10 +32,10 @@
       <div class="collapse navbar-collapse" id="collapse_target">
         <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('') }}">Inicio</a>
+            <a class="nav-link" href="{{ url('') }}">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('nuestra-empresa') }}">Nuestra Empresa</a>
+            <a class="nav-link" href="{{ url('nuestra-empresa') }}">QUIEN SOY</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('servicios') }}">Servicios</a>

@@ -13,10 +13,7 @@ class Pay extends Controller{
 	}
 
 	public function Pagando(Request $request){
-
-		//return 1;
-
-		$oPayment = new PaymentController($request->conektaTokenId, $request->card, $request->nombre, $request->ProyAse, $request->email, $request->monto);
+		$oPayment = new PaymentController($request->conektaTokenId, $request->card, $request->nombre, $request->ProyAse, $request->email, $request->monto, $request->tipoMoneda);
 
 		if($oPayment->Pay()){
 			return 1;
