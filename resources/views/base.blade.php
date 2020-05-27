@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap/bootstrap.min.css') }}">  
     <link rel="stylesheet" href="{{ asset('css/plantillas/base.css') }}">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   
   	@yield('estilos')
 
@@ -15,17 +16,17 @@
   <body>
     <header class="jumbotron" style="margin:auto; border-radius: 0px;">
       <div class="row">
-        <div class="container col-4">
-          <a href="{{ url('') }}"><img src="{{ asset('img/logos/logo1.png') }}" alt=""></a>
+        <div class="container-fluid col-4 text-center align-self-center">
+          <a href="{{ url('') }}"><img src="{{ asset('img/logos/logo1.png') }}" width="100px" height="170px" alt=""></a>
         </div>
         <div class="container col-8 pt-3" style="color: #6A9DD1">
-          <h1 style="font-size: 4rem;">ACoDeProM</h1>
-          <p style="font-size: 1.5rem!important;">Consultores y Desarrolladores de Proyectos Productivos</p>
+          <h1 id="titulo" class="col-sm-auto" style="font-size: 4rem;">Muebles de Madera Maya</h1>
+          <p id="subtitulo" class="col-sm-auto" style="font-size: 1.5rem!important;">Fabricante de muebles en acero y madera</p>
         </div>
       </div>
       
     </header>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #6A9DD1; z-index: 1;">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #BE986D; z-index: 1;">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,22 +39,33 @@
             <a class="nav-link" href="{{ url('nuestra-empresa') }}">QUIEN SOY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('servicios') }}">Servicios</a>
+            <a class="nav-link" href="{{ url('servicios') }}">MUEBLES</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="{{ url('contacto') }}">Contacto</a>
+            <a class="nav-link" href="{{ url('contacto') }}">CONTACTO</a>
           </li>
           
-          <li class="nav-item">
+          {{--  <li class="nav-item">
             <a class="nav-link" href="{{ url('pago') }}">Pago</a>
-          </li>
+          </li>--}}
 
         </ul>
       </div>
     </nav>
-    
-	@yield('contenido')
+    <main>
+      @yield('contenido')
+    </main>
+	
+
+    <footer class="container-fluid">
+      <p>Author: Miguel Enrique</p>
+      <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+      <div class="row">
+        <a class="col-6" href="https://www.facebook.com/MuebledeMaderaMaya"><i class="fa fa-facebook-square"></i> Facebook</a>
+        <a class="col-6" href="www.instagram.com/muebles_de_madera_maya_tuxtla/"><i class="fa fa-instagram"></i> Instagram</a>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

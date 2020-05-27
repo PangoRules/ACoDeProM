@@ -2,8 +2,25 @@
 	height: 15rem;
 }
 
+footer{
+  text-align: center;
+  padding: 1rem;
+  background-color: #8D6B48;
+  color: #F5D7BD;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+footer a{
+  text-decoration: none;
+  color: #F5D7BD;
+  font-size: 1rem;
+}
+
 header{
-	background-color: #2A324B!important;
+	background-color: #8D6B48!important;
 }
 
 header p{
@@ -13,7 +30,10 @@ header p{
 
 body{
 	background-color: #E3E3E8;
+  position: relative;
 	height: 100%;
+  padding-bottom: 10rem;
+  min-height: 100vh;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,6 +41,10 @@ body{
 
 header a p{
 	cursor: pointer!important;
+}
+
+#titulo,#subtitulo{
+  color: #F5D7BD;
 }
 
 @media only screen and (max-width: 400px) {

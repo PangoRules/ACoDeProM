@@ -1,0 +1,14 @@
+.carousel-indicators{
+	background: rgba(190,152,109,.5);
+}
+.carousel-item{
+	width: 100%;
+	height: auto;
+}
+
+#spansito{
+	padding: -0.25rem !important;
+	color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
