@@ -6,9 +6,9 @@
 
 @section('contenido')
 <div class="container-fluid text-center">
-  <h2 class="display-4 text-center" style="margin-top:40px!important;"><b>Bienvenidos, es su casa..!!</b></h2>
-  <h3 class="border-left mt-5" style="margin-bottom: 0!important;">MI ESTILO DE FABRICACION</h3>
-  <span><small>(Solo en Acero y Madera)</small></span>
+  <h2 class="display-4 text-center" style="margin-top:40px!important; "><b>BIENVENIDOS, ES SU CASA..!!</b></h2>
+  <h3 class="border-left mt-5" style="margin-bottom: 0!important; color: red">MI ESTILO DE FABRICACION</h3>
+  <span><small><b>(Solo en Acero y Madera)</b></small></span>
 </div>
 
 <div class="container-fluid mt-5">
@@ -42,7 +42,7 @@
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Racks para TV</h5>
+          <h5 class="card-title" style="color: red"><b>Racks para TV</b></h5>
           <p class="card-text">Racks de madera para sostener tanto pantallas como centros de diversion.</p>
         </div>
       </div>
@@ -76,7 +76,7 @@
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Mesas de Centro</h5>
+          <h5 class="card-title" style="color: red"><b>Mesas de Centro</b></h5>
           <p class="card-text">Mesas para centros de salas perfectas para tomar un buen cafe por las noches.</p>
         </div>
       </div>
@@ -110,7 +110,7 @@
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Recibidores</h5>
+          <h5 class="card-title" style="color: red"><b>Recibidores</b></h5>
           <p class="card-text">Reccibidores de madera con y sin cajones, ideales para salas o cuartos.</p>
         </div>
       </div>

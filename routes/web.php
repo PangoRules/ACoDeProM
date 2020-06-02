@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::get('nuestra-empresa/', function () {
+Route::get('quien-soy/', function () {
     return view('nuestraEmpresa');
 });
 
@@ -25,7 +25,7 @@ Route::get('contacto/', function () {
     return view('contacto');
 });
 
-Route::get('servicios/', function () {
+Route::get('muebles/', function () {
     return view('servicios');
 });
 
