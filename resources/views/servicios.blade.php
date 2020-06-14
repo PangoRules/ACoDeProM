@@ -22,68 +22,28 @@
 	  <span>{{session('success')}}</span>
 	</div>
 @endif
-	<h2 class="display-4 text-center" style="margin-top:40px!important;">PROYECTOS</h2>
-	<div class="container mt-4 p-4">
-		<table class="table table-hover">
-			<caption>Lista de proyectos realizados</caption>
-			<thead class="thead-dark">
-				<tr>
-				  <th scope="col">#</th>
-				  <th scope="col">Proyecto</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-				  <th scope="row">1</th>
-				  <td>Siembra, manejo y sustentabilidad de hortalizas</td>
-				</tr>
-				<tr>
-				  <th scope="row">2</th>
-				  <td>Siembra, manejo y producción de mojarra tilapia</td>
-				</tr>
-				<tr>
-				  <th scope="row">3</th>
-				  <td>Siembra, manejo y producción de camarón de granja</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="container text-center">
-			<button id="cotProy" type="button" class="btn btn-dark" onclick="openForm()">Solicitar Cotización de Proyecto</button>
+	<h2 class="display-4 text-center" style="margin-top:40px!important;margin-bottom:40px!important;">Algunos de mis trabajos...</h2>
+	<div class="container-fluid text-center">
+		<div class="row mt-4">
+			<div class="col-lg-3 col-md-6 mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/closet.jpg') }}" alt="Closet de Madera" class="img-fluid mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/escritorio.jpg') }}" alt="Escritorio de Madera" class="img-fluid">
+			</div>
+			<div class="col-lg-3 col-md-6 mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/trastero2.jpg') }}" alt="Trastero de Madera" class="img-fluid mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/cama.jpg') }}" alt="Cama de Madera" class="img-fluid">
+			</div>
+			<div class="col-lg-3 col-md-6 mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/casa.jpg') }}" alt="Casa de Madera" class="img-fluid mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/mesaMadera.jpg') }}" alt="Mesa de Madera" class="img-fluid">
+			</div>
+			<div class="col-lg-3 col-md-6 mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/lavamanos.jpg') }}" alt="Lavamanos de Madera" class="img-fluid mb-4">
+				<img src="{{ asset('img/muebles/misMuebles/estante.jpg') }}" alt="Estante de Madera" class="img-fluid">
+			</div>
 		</div>
 	</div>
-	<h2 class="display-4 text-center" style="margin-top:40px!important;">ASESORIAS</h2>
-	<div class="container mt-4 p-4">
-		<table class="table table-hover">
-			<caption>Lista de asesorias realizadas</caption>
-			<thead class="thead-dark">
-			<tr>
-			  <th scope="col">#</th>
-			  <th scope="col">Asesoria</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-			  <th scope="row">1</th>
-			  <td>Proyectos de sustentabilidad alimenticia: Remoto y Sitio</td>
-			</tr>
-			<tr>
-			  <th scope="row">2</th>
-			  <td>Minería sustentable y amigable con el medio ambiente y la comunidad</td>
-			</tr>
-			<tr>
-			  <th scope="row">3</th>
-			  <td>Logística y transporte de mercancías y minerales diversos</td>
-			</tr>
-			<tr>
-			  <th scope="row">4</th>
-			  <td>Planificación de industria extractiva de minerales</td>
-			</tr>
-			</tbody>
-		</table>
-		<div class="container text-center">
-			<button id="cotAses" type="button" class="btn btn-dark" onclick="openForm()">Solicitar Cotización de Asesoria</button>
-		</div>
-	</div>
+	{{-- MANDADOR CORREOS --}}
 	<div id="popupForm" class="container-fluid pop-UpS">
 		<form method="post" action="{{ route('MailSender') }}">
 			@csrf
@@ -112,6 +72,7 @@
 			</div>	
 		</form>
 	</div>
+	{{-- MANDADOR CORREOS --}}
 	<script>
 	function openForm() {
 	document.getElementById("popupForm").style.visibility="visible";
